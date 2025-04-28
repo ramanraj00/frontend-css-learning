@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            border: 2px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .image2{
+            /* top: 100px;  */
+            /* top is static property so to left right wont work on it */
+
+            /* position: relative;
+            top: 300px;
+            left:100px */
+
+            /* position: absolute; */
+        }
+
+        .container{
+            position:relative;
+            height: 1500px;
+            background-color: rgba(137, 43, 226, 0.623);
+        }
+
+        .image4{
+           position: fixed;
+        }
+
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: rgba(100, 148, 237, 0.448);
+            height: 5000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="depositphotos_36220949-stock-photo-beautiful-landscape.jpg"
+         alt="poster1"
+         width="280px"
+         height="280px"
+         class="image1">
+
+         <img src="free-nature-images.jpg"
+         alt="poster2"
+         width="280px"
+         height="280px"
+         class="image2">
+
+         <img src="image4.jpeg"
+         alt="poster3"
+         width="280px"
+         height="280px"
+         class="image3">
+
+         <img src="Unknown.jpeg"
+         alt="poster4"
+         width="280px"
+         height="280px"
+         class="image4">
+       
+
+    </div>
+
+    <div class="box">
+        
+    </div>
+</body>
+</html>
