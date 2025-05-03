@@ -9,11 +9,13 @@
 
 
 .container{
-height: 100vh;
-width:100vw;
+height: 100%;
+width:100%;
 overflow-x: none;
 background-color: #e2e5e8;
 background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+
+
 }
 .navcontainer{
     width: 100vw;
@@ -30,6 +32,8 @@ background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
 nav{
     width: 100%;
     overflow-x: none;
+    padding-right: 10rem;
+    padding-left: 10rem;
 }
 
 #navlist{
@@ -77,12 +81,14 @@ a{
     max-width: 1200px;
     min-height: 90vh;
     margin: auto;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 60px;
+    /* border: 1px solid black; */
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 100px;
+    box-shadow: 0px 0px 30px black;
+    
 }
 
 .item{
@@ -90,11 +96,29 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-
-.rightbox img{
-    height: 400px;
+.rightbox{
+    width: 50%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    transition: all  0.3s linear 0s ;
+    box-shadow: 1px 1px 10px black;
     border-radius: 20px;
 }
+.rightbox:hover{
+    transform: scale(1.1);
+    transition: all 0.4s linear 0s;
+}
+.rightbox img{
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    
+}
+
 
 .leftbox {
     display: flex;
@@ -107,5 +131,51 @@ a{
 }
 
 .ingbox{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
+.recipebox{
+    font-size: 1.5rem;
+}
+.ing2box{
+    font-size: 1.5rem;
+}
+.recipe2box{
+    font-size: 1.5rem;
+}
+ol{
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+
+
+.rightbox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(182, 166, 166, 0.751);
+    border-radius:20px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+
+}
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
