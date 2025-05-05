@@ -19,8 +19,8 @@ align-items: center;
 }
 
 .card{
-    width: 500px;
-    height: 800px;
+    width: 450px;
+    height: 700px;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -174,3 +174,6 @@ align-items: center;
     right: 10px;
   }
 
+#amountbox p{
+  display: flex;
+}
