@@ -5,6 +5,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .container{
@@ -61,14 +62,14 @@ align-items: center;
 }
 
 
-.rightbox{
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-   /* display: flex;
-   align-items: flex-end;
-   height: 100%;
-   padding-right: 10px; */
+
+
+.replacebox{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-bottom: 20px;
+  
 }
 
 
